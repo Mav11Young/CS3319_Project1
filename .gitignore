@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+.ipynb_checkpoints/
+
+# outputs/cache
+outputs_q1_q2/
+*.joblib
+*.npy
+*.npz
+
+# AwA2 dataset (very large)
+AwA2/
