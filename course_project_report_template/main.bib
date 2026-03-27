@@ -1,111 +1,312 @@
-@String(PAMI = {IEEE Trans. Pattern Anal. Mach. Intell.})
-@String(IJCV = {Int. J. Comput. Vis.})
-@String(CVPR= {IEEE Conf. Comput. Vis. Pattern Recog.})
-@String(ICCV= {Int. Conf. Comput. Vis.})
-@String(ECCV= {Eur. Conf. Comput. Vis.})
-@String(NIPS= {Adv. Neural Inform. Process. Syst.})
-@String(ICPR = {Int. Conf. Pattern Recog.})
-@String(BMVC= {Brit. Mach. Vis. Conf.})
-@String(TOG= {ACM Trans. Graph.})
-@String(TIP  = {IEEE Trans. Image Process.})
+% ============================================================
+%  Bibliography for CS3319 Project 1
+%  Topic: Dimensionality Reduction on AwA2 Deep Features
+% ============================================================
+
+% ── Journal / Conference string abbreviations (CVPR template) ──────────────
+@String(PAMI  = {IEEE Trans. Pattern Anal. Mach. Intell.})
+@String(IJCV  = {Int. J. Comput. Vis.})
+@String(CVPR  = {IEEE Conf. Comput. Vis. Pattern Recog.})
+@String(ICCV  = {Int. Conf. Comput. Vis.})
+@String(ECCV  = {Eur. Conf. Comput. Vis.})
+@String(NIPS  = {Adv. Neural Inform. Process. Syst.})
+@String(ICPR  = {Int. Conf. Pattern Recog.})
+@String(BMVC  = {Brit. Mach. Vis. Conf.})
+@String(TOG   = {ACM Trans. Graph.})
+@String(TIP   = {IEEE Trans. Image Process.})
 @String(TVCG  = {IEEE Trans. Vis. Comput. Graph.})
-@String(TMM  = {IEEE Trans. Multimedia})
-@String(ACMMM= {ACM Int. Conf. Multimedia})
-@String(ICME = {Int. Conf. Multimedia and Expo})
-@String(ICASSP=	{ICASSP})
-@String(ICIP = {IEEE Int. Conf. Image Process.})
+@String(TMM   = {IEEE Trans. Multimedia})
+@String(ACMMM = {ACM Int. Conf. Multimedia})
+@String(ICME  = {Int. Conf. Multimedia and Expo})
+@String(ICASSP= {ICASSP})
+@String(ICIP  = {IEEE Int. Conf. Image Process.})
 @String(ACCV  = {ACCV})
-@String(ICLR = {Int. Conf. Learn. Represent.})
+@String(ICLR  = {Int. Conf. Learn. Represent.})
 @String(IJCAI = {IJCAI})
-@String(PR   = {Pattern Recognition})
-@String(AAAI = {AAAI})
-@String(CVPRW= {IEEE Conf. Comput. Vis. Pattern Recog. Worksh.})
-@String(CSVT = {IEEE Trans. Circuit Syst. Video Technol.})
-
-@String(SPL	= {IEEE Sign. Process. Letters})
-@String(VR   = {Vis. Res.})
-@String(JOV	 = {J. Vis.})
-@String(TVC  = {The Vis. Comput.})
-@String(JCST  = {J. Comput. Sci. Tech.})
-@String(CGF  = {Comput. Graph. Forum})
-@String(CVM = {Computational Visual Media})
+@String(PR    = {Pattern Recognition})
+@String(AAAI  = {AAAI})
+@String(CVPRW = {IEEE Conf. Comput. Vis. Pattern Recog. Worksh.})
+@String(CSVT  = {IEEE Trans. Circuit Syst. Video Technol.})
+@String(JMLR  = {J. Mach. Learn. Res.})
+@String(JRSS  = {J. R. Stat. Soc.})
+@String(NC    = {Neural Comput.})
 
 
-@String(PAMI  = {IEEE TPAMI})
-@String(IJCV  = {IJCV})
-@String(CVPR  = {CVPR})
-@String(ICCV  = {ICCV})
-@String(ECCV  = {ECCV})
-@String(NIPS  = {NeurIPS})
-@String(ICPR  = {ICPR})
-@String(BMVC  =	{BMVC})
-@String(TOG   = {ACM TOG})
-@String(TIP   = {IEEE TIP})
-@String(TVCG  = {IEEE TVCG})
-@String(TCSVT = {IEEE TCSVT})
-@String(TMM   =	{IEEE TMM})
-@String(ACMMM = {ACM MM})
-@String(ICME  =	{ICME})
-@String(ICASSP=	{ICASSP})
-@String(ICIP  = {ICIP})
-@String(ACCV  = {ACCV})
-@String(ICLR  = {ICLR})
-@String(IJCAI = {IJCAI})
-@String(PR = {PR})
-@String(AAAI = {AAAI})
-@String(CVPRW= {CVPRW})
-@String(CSVT = {IEEE TCSVT})
+% ─────────────────────────────────────────────────────────────────────────────
+%  Dataset
+% ─────────────────────────────────────────────────────────────────────────────
 
-
-
-@misc{Authors14,
- author = {FirstName LastName},
- title = {The frobnicatable foo filter},
- note = {Face and Gesture submission ID 324. Supplied as supplemental material {\tt fg324.pdf}},
- year = 2014
+@article{xian2019zero,
+  title     = {Zero-Shot Learning—{A} Comprehensive Evaluation of the Good,
+               the Bad and the Ugly},
+  author    = {Xian, Yongqin and Lampert, Christoph H. and Schiele, Bernt
+               and Akata, Zeynep},
+  journal   = PAMI,
+  volume    = {41},
+  number    = {9},
+  pages     = {2251--2265},
+  year      = {2019},
+  publisher = {IEEE},
+  doi       = {10.1109/TPAMI.2018.2857768}
 }
 
-@misc{Authors14b,
- author = {FirstName LastName},
- title = {Frobnication tutorial},
- note = {Supplied as supplemental material {\tt tr.pdf}},
- year = 2014
+@inproceedings{lampert2009learning,
+  title     = {Learning to Detect Unseen Object Classes by Between-Class
+               Attribute Transfer},
+  author    = {Lampert, Christoph H. and Nickisch, Hannes and Harmeling, Stefan},
+  booktitle = CVPR,
+  pages     = {951--958},
+  year      = {2009},
+  doi       = {10.1109/CVPR.2009.5206594}
 }
 
-@article{Alpher02,
-author = {FirstName Alpher},
-title = {Frobnication},
-journal = PAMI,
-volume = 12,
-number = 1,
-pages = {234--778},
-year = 2002
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  Deep Feature Extractor
+% ─────────────────────────────────────────────────────────────────────────────
+
+@inproceedings{he2016deep,
+  title     = {Deep Residual Learning for Image Recognition},
+  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle = CVPR,
+  pages     = {770--778},
+  year      = {2016},
+  doi       = {10.1109/CVPR.2016.90}
 }
 
-@article{Alpher03,
-author = {FirstName Alpher and  FirstName Fotheringham-Smythe},
-title = {Frobnication revisited},
-journal = {Journal of Foo},
-volume = 13,
-number = 1,
-pages = {234--778},
-year = 2003
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  Classifier
+% ─────────────────────────────────────────────────────────────────────────────
+
+@article{cortes1995support,
+  title     = {Support-Vector Networks},
+  author    = {Cortes, Corinna and Vapnik, Vladimir},
+  journal   = {Mach. Learn.},
+  volume    = {20},
+  number    = {3},
+  pages     = {273--297},
+  year      = {1995},
+  publisher = {Springer},
+  doi       = {10.1007/BF00994018}
 }
 
-@article{Alpher04,
-author = {FirstName Alpher and FirstName Fotheringham-Smythe and FirstName Gamow},
-title = {Can a machine frobnicate?},
-journal = {Journal of Foo},
-volume = 14,
-number = 1,
-pages = {234--778},
-year = 2004
+@article{fan2008liblinear,
+  title     = {{LIBLINEAR}: {A} Library for Large Linear Classification},
+  author    = {Fan, Rong-En and Chang, Kai-Wei and Hsieh, Cho-Jui and
+               Wang, Xiang-Rui and Lin, Chih-Jen},
+  journal   = JMLR,
+  volume    = {9},
+  pages     = {1871--1874},
+  year      = {2008}
 }
 
-@inproceedings{Alpher05,
-author = {FirstName Alpher and FirstName Gamow},
-title = {Can a computer frobnicate?},
-booktitle = CVPR,
-pages = {234--778},
-year = 2005
+@article{scikit-learn,
+  title     = {Scikit-learn: Machine Learning in {Python}},
+  author    = {Pedregosa, Fabian and Varoquaux, Ga{\"e}l and Gramfort, Alexandre
+               and Michel, Vincent and Thirion, Bertrand and Grisel, Olivier
+               and Blondel, Mathieu and Prettenhofer, Peter and Weiss, Ron
+               and Dubourg, Vincent and Vanderplas, Jake and Passos, Alexandre
+               and Cournapeau, David and Brucher, Matthieu and Perrot, Matthieu
+               and Duchesnay, {\'E}douard},
+  journal   = JMLR,
+  volume    = {12},
+  pages     = {2825--2830},
+  year      = {2011}
+}
+
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  Method 1 – Feature Selection
+% ─────────────────────────────────────────────────────────────────────────────
+
+@book{fisher1992statistical,
+  title     = {Statistical Methods for Research Workers},
+  author    = {Fisher, Ronald A.},
+  year      = {1925},
+  publisher = {Oliver \& Boyd},
+  address   = {Edinburgh}
+}
+
+@article{guyon2003introduction,
+  title     = {An Introduction to Variable and Feature Selection},
+  author    = {Guyon, Isabelle and Elisseeff, Andr{\'e}},
+  journal   = JMLR,
+  volume    = {3},
+  pages     = {1157--1182},
+  year      = {2003}
+}
+
+@article{saeys2007review,
+  title     = {A Review of Feature Selection Techniques in Bioinformatics},
+  author    = {Saeys, Yvan and Inza, I{\~n}aki and Larra{\~n}aga, Pedro},
+  journal   = {Bioinformatics},
+  volume    = {23},
+  number    = {19},
+  pages     = {2507--2517},
+  year      = {2007},
+  publisher = {Oxford University Press},
+  doi       = {10.1093/bioinformatics/btm344}
+}
+
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  Method 2 – Feature Projection (PCA)
+% ─────────────────────────────────────────────────────────────────────────────
+
+@article{pearson1901pca,
+  title     = {On Lines and Planes of Closest Fit to Systems of Points in Space},
+  author    = {Pearson, Karl},
+  journal   = {Philos. Mag.},
+  volume    = {2},
+  number    = {11},
+  pages     = {559--572},
+  year      = {1901},
+  doi       = {10.1080/14786440109462720}
+}
+
+@article{hotelling1933analysis,
+  title     = {Analysis of a Complex of Statistical Variables into Principal
+               Components},
+  author    = {Hotelling, Harold},
+  journal   = {J. Educ. Psychol.},
+  volume    = {24},
+  number    = {6},
+  pages     = {417--441},
+  year      = {1933},
+  doi       = {10.1037/h0071325}
+}
+
+@article{jolliffe2016principal,
+  title     = {Principal Component Analysis: A Review and Recent Developments},
+  author    = {Jolliffe, Ian T. and Cadima, Jorge},
+  journal   = {Philos. Trans. R. Soc. A},
+  volume    = {374},
+  number    = {2065},
+  pages     = {20150202},
+  year      = {2016},
+  publisher = {The Royal Society Publishing},
+  doi       = {10.1098/rsta.2015.0202}
+}
+
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  Method 3 – Feature Learning (Autoencoder)
+% ─────────────────────────────────────────────────────────────────────────────
+
+@article{hinton2006reducing,
+  title     = {Reducing the Dimensionality of Data with Neural Networks},
+  author    = {Hinton, Geoffrey E. and Salakhutdinov, Ruslan R.},
+  journal   = {Science},
+  volume    = {313},
+  number    = {5786},
+  pages     = {504--507},
+  year      = {2006},
+  publisher = {American Association for the Advancement of Science},
+  doi       = {10.1126/science.1127647}
+}
+
+@article{rumelhart1986learning,
+  title     = {Learning Representations by Back-Propagating Errors},
+  author    = {Rumelhart, David E. and Hinton, Geoffrey E. and Williams,
+               Ronald J.},
+  journal   = {Nature},
+  volume    = {323},
+  number    = {6088},
+  pages     = {533--536},
+  year      = {1986},
+  publisher = {Nature Publishing Group},
+  doi       = {10.1038/323533a0}
+}
+
+@inproceedings{vincent2008extracting,
+  title     = {Extracting and Composing Robust Features with Denoising
+               Autoencoders},
+  author    = {Vincent, Pascal and Larochelle, Hugo and Bengio, Yoshua
+               and Manzagol, Pierre-Antoine},
+  booktitle = {Proc. Int. Conf. Mach. Learn. (ICML)},
+  pages     = {1096--1103},
+  year      = {2008},
+  doi       = {10.1145/1390156.1390294}
+}
+
+@article{kingma2013auto,
+  title     = {Auto-Encoding Variational {Bayes}},
+  author    = {Kingma, Diederik P. and Welling, Max},
+  journal   = {arXiv preprint arXiv:1312.6114},
+  year      = {2013}
+}
+
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  Deep Learning Framework
+% ─────────────────────────────────────────────────────────────────────────────
+
+@inproceedings{paszke2019pytorch,
+  title     = {{PyTorch}: An Imperative Style, High-Performance Deep Learning
+               Library},
+  author    = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam
+               and Bradbury, James and Chanan, Gregory and Killeen, Trevor and
+               Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and
+               Desmaison, Alban and K{\"o}pf, Andreas and Yang, Edward and
+               DeVito, Zachary and Raison, Martin and Tejani, Alykhan and
+               Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai,
+               Junjie and Chintala, Soumith},
+  booktitle = NIPS,
+  volume    = {32},
+  year      = {2019}
+}
+
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  Optimisation
+% ─────────────────────────────────────────────────────────────────────────────
+
+@article{kingma2014adam,
+  title     = {Adam: {A} Method for Stochastic Optimization},
+  author    = {Kingma, Diederik P. and Ba, Jimmy},
+  journal   = {arXiv preprint arXiv:1412.6980},
+  year      = {2014}
+}
+
+@inproceedings{ioffe2015batch,
+  title     = {Batch Normalization: Accelerating Deep Network Training by
+               Reducing Internal Covariate Shift},
+  author    = {Ioffe, Sergey and Szegedy, Christian},
+  booktitle = {Proc. Int. Conf. Mach. Learn. (ICML)},
+  pages     = {448--456},
+  year      = {2015}
+}
+
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  General Dimensionality Reduction (survey / background)
+% ─────────────────────────────────────────────────────────────────────────────
+
+@article{van2009dimensionality,
+  title     = {Dimensionality Reduction: {A} Comparative Review},
+  author    = {van der Maaten, Laurens and Postma, Eric and van den Herik,
+               Jaap},
+  journal   = {J. Mach. Learn. Res.},
+  volume    = {10},
+  number    = {1},
+  pages     = {66--71},
+  year      = {2009}
+}
+
+@book{bishop2006pattern,
+  title     = {Pattern Recognition and Machine Learning},
+  author    = {Bishop, Christopher M.},
+  year      = {2006},
+  publisher = {Springer},
+  address   = {New York}
+}
+
+@book{goodfellow2016deep,
+  title     = {Deep Learning},
+  author    = {Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron},
+  year      = {2016},
+  publisher = {MIT Press},
+  address   = {Cambridge, MA},
+  url       = {http://www.deeplearningbook.org}
 }

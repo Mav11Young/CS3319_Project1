@@ -16,11 +16,111 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{xian2019zero,lampert2009learning}
+\citation{he2016deep}
+\citation{fan2008liblinear,cortes1995support}
+\citation{scikit-learn}
 \@writefile{toc}{\contentsline {section}{\numberline {1}\hskip -1em.\nobreakspace  {}Experimental Setting}{1}{section.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Overall experimental summary. Left: class-wise 60/40 train-test split. Middle: cross-validation accuracy, final test accuracy, macro F1 and weighted F1. Right: distribution of per-class test accuracy.\relax }}{1}{figure.caption.1}}
+\newlabel{sec:setting}{{1}{1}{\texorpdfstring {\hskip -1em.~}{}Experimental Setting}{section.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Dataset.}{1}{section*.1}}
+\@writefile{brf}{\backcite{xian2019zero}{{1}{1}{section*.1}}}
+\@writefile{brf}{\backcite{lampert2009learning}{{1}{1}{section*.1}}}
+\@writefile{brf}{\backcite{he2016deep}{{1}{1}{section*.1}}}
+\@writefile{toc}{\contentsline {paragraph}{Train/test split.}{1}{section*.2}}
+\@writefile{toc}{\contentsline {paragraph}{Preprocessing.}{1}{section*.3}}
+\@writefile{toc}{\contentsline {paragraph}{Classifier.}{1}{section*.4}}
+\@writefile{brf}{\backcite{fan2008liblinear}{{1}{1}{section*.4}}}
+\@writefile{brf}{\backcite{cortes1995support}{{1}{1}{section*.4}}}
+\@writefile{brf}{\backcite{scikit-learn}{{1}{1}{section*.4}}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}\hskip -1em.\nobreakspace  {}Baseline: Linear SVM on Full Features}{2}{section.2}}
+\newlabel{sec:baseline}{{2}{2}{\texorpdfstring {\hskip -1em.~}{}Baseline: Linear SVM on Full Features}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}\hskip -1em.\nobreakspace  {}Setup}{2}{subsection.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}\hskip -1em.\nobreakspace  {}Results}{2}{subsection.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Baseline experimental overview. \emph  {Left}: class-wise 60/40 train/test split sizes. \emph  {Middle}: CV accuracy, test accuracy, macro F1, and weighted F1. \emph  {Right}: distribution of per-class test accuracy across 50 classes.\relax }}{2}{figure.caption.5}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:overview}{{1}{1}{Overall experimental summary. Left: class-wise 60/40 train-test split. Middle: cross-validation accuracy, final test accuracy, macro F1 and weighted F1. Right: distribution of per-class test accuracy.\relax }{figure.caption.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}\hskip -1em.\nobreakspace  {}Experimental Results}{1}{section.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Detailed class-wise analysis. Left: per-class test accuracy ranked from the most difficult class to the easiest class. Right: relationship between test-set support and class accuracy, where color encodes per-class F1 score.\relax }}{2}{figure.caption.2}}
-\newlabel{fig:class_analysis}{{2}{2}{Detailed class-wise analysis. Left: per-class test accuracy ranked from the most difficult class to the easiest class. Right: relationship between test-set support and class accuracy, where color encodes per-class F1 score.\relax }{figure.caption.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.\nobreakspace  {}Conclusion}{2}{section.3}}
+\newlabel{fig:baseline_overview}{{1}{2}{Baseline experimental overview. \emph {Left}: class-wise 60/40 train/test split sizes. \emph {Middle}: CV accuracy, test accuracy, macro F1, and weighted F1. \emph {Right}: distribution of per-class test accuracy across 50 classes.\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Per-class test accuracy ranked from hardest to easiest. 30 of 50 classes exceed 90\% accuracy; the bottom cluster is dominated by visually ambiguous small mammals.\relax }}{2}{figure.caption.6}}
+\newlabel{fig:baseline_ranked}{{2}{2}{Per-class test accuracy ranked from hardest to easiest. 30 of 50 classes exceed 90\% accuracy; the bottom cluster is dominated by visually ambiguous small mammals.\relax }{figure.caption.6}{}}
+\citation{fisher1992statistical,guyon2003introduction}
+\citation{pearson1901pca,hotelling1933analysis}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Relationship between test-set support and class accuracy. Colour encodes per-class F1. Classes with more samples tend to achieve higher, more stable accuracy.\relax }}{3}{figure.caption.7}}
+\newlabel{fig:baseline_scatter}{{3}{3}{Relationship between test-set support and class accuracy. Colour encodes per-class F1. Classes with more samples tend to achieve higher, more stable accuracy.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.\nobreakspace  {}Dimensionality Reduction Methods}{3}{section.3}}
+\newlabel{sec:methods}{{3}{3}{\texorpdfstring {\hskip -1em.~}{}Dimensionality Reduction Methods}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}\hskip -1em.\nobreakspace  {}Method\nobreakspace  {}1: Feature Selection via \textsc  {SelectKBest}}{3}{subsection.3.1}}
+\newlabel{sec:sel}{{3.1}{3}{\texorpdfstring {\hskip -1em.~}{}Method~1: Feature Selection via \textsc {SelectKBest}}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Motivation.}{3}{section*.8}}
+\@writefile{toc}{\contentsline {paragraph}{Method.}{3}{section*.9}}
+\@writefile{brf}{\backcite{fisher1992statistical}{{3}{3.1}{section*.9}}}
+\@writefile{brf}{\backcite{guyon2003introduction}{{3}{3.1}{section*.9}}}
+\newlabel{eq:ftest}{{1}{3}{Method}{equation.3.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Target dimensionalities.}{3}{section*.10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}\hskip -1em.\nobreakspace  {}Method\nobreakspace  {}2: Feature Projection via PCA}{4}{subsection.3.2}}
+\newlabel{sec:pca}{{3.2}{4}{\texorpdfstring {\hskip -1em.~}{}Method~2: Feature Projection via PCA}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Motivation.}{4}{section*.11}}
+\@writefile{brf}{\backcite{pearson1901pca}{{4}{3.2}{section*.11}}}
+\@writefile{brf}{\backcite{hotelling1933analysis}{{4}{3.2}{section*.11}}}
+\@writefile{toc}{\contentsline {paragraph}{Method.}{4}{section*.12}}
+\newlabel{eq:pca}{{3}{4}{Method}{equation.3.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Target dimensionalities.}{4}{section*.13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}\hskip -1em.\nobreakspace  {}Method\nobreakspace  {}3: Feature Learning via Sparse Coding (OMP)}{4}{subsection.3.3}}
+\newlabel{sec:sc}{{3.3}{4}{\texorpdfstring {\hskip -1em.~}{}Method~3: Feature Learning via Sparse Coding (OMP)}{subsection.3.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Motivation.}{4}{section*.14}}
+\@writefile{toc}{\contentsline {paragraph}{Method.}{4}{section*.15}}
+\@writefile{toc}{\contentsline {paragraph}{Training.}{4}{section*.16}}
+\@writefile{toc}{\contentsline {paragraph}{Target dimensionalities.}{4}{section*.17}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Experimental Results}{4}{section.4}}
+\newlabel{sec:results}{{4}{4}{\texorpdfstring {\hskip -1em.~}{}Experimental Results}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\hskip -1em.\nobreakspace  {}Accuracy vs.\ Dimensionality}{4}{subsection.4.1}}
+\@writefile{toc}{\contentsline {paragraph}{Low-dimensional regime ($k \le 128$).}{4}{section*.19}}
+\@writefile{toc}{\contentsline {paragraph}{Mid-dimensional regime ($128 \le k \le 512$).}{4}{section*.20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Test accuracy as a function of the number of retained dimensions for all three methods. \emph  {Left}: linear x-axis shows the full range. \emph  {Right}: log x-axis highlights behaviour at very low dimensionality. The dashed red line marks the baseline (2048-d, $92.52\%$). Peak accuracy labels are shown for each method.\relax }}{5}{figure.caption.18}}
+\newlabel{fig:acc_vs_dim}{{4}{5}{Test accuracy as a function of the number of retained dimensions for all three methods. \emph {Left}: linear x-axis shows the full range. \emph {Right}: log x-axis highlights behaviour at very low dimensionality. The dashed red line marks the baseline (2048-d, $92.52\%$). Peak accuracy labels are shown for each method.\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {paragraph}{High-dimensional regime ($k \ge 512$).}{5}{section*.21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\hskip -1em.\nobreakspace  {}PCA Variance Analysis}{5}{subsection.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \emph  {Left}: cumulative explained variance vs.\ number of PCs. Horizontal dashed lines mark 90\%, 95\%, and 99\% thresholds. \emph  {Right}: PCA test accuracy overlaid with cumulative variance, showing how accuracy tracks variance retention.\relax }}{5}{figure.caption.22}}
+\newlabel{fig:pca_variance}{{5}{5}{\emph {Left}: cumulative explained variance vs.\ number of PCs. Horizontal dashed lines mark 90\%, 95\%, and 99\% thresholds. \emph {Right}: PCA test accuracy overlaid with cumulative variance, showing how accuracy tracks variance retention.\relax }{figure.caption.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\hskip -1em.\nobreakspace  {}Sparse Coding Diagnostics}{6}{subsection.4.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \emph  {Left}: train/test reconstruction MSE vs.\ sparse-coding dimensionality. \emph  {Right}: code density (non-zero ratio) vs.\ dimensionality; lower values indicate sparser representations.\relax }}{6}{figure.caption.23}}
+\newlabel{fig:sc_curves}{{6}{6}{\emph {Left}: train/test reconstruction MSE vs.\ sparse-coding dimensionality. \emph {Right}: code density (non-zero ratio) vs.\ dimensionality; lower values indicate sparser representations.\relax }{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}\hskip -1em.\nobreakspace  {}Accuracy Summary}{6}{subsection.4.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Summary comparison. \emph  {Left}: best test accuracy achieved by each method. \emph  {Middle}: optimal number of dimensions for each method. \emph  {Right}: dimensionality-reduction runtime vs.\ test accuracy across all $(k, \text  {method})$ settings. Bubble area scales with $k$.\relax }}{6}{figure.caption.24}}
+\newlabel{fig:method_summary}{{7}{6}{Summary comparison. \emph {Left}: best test accuracy achieved by each method. \emph {Middle}: optimal number of dimensions for each method. \emph {Right}: dimensionality-reduction runtime vs.\ test accuracy across all $(k, \text {method})$ settings. Bubble area scales with $k$.\relax }{figure.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Summary of best results per method. $k^*$ = optimal dimension; ``Gain'' = test accuracy minus baseline ($92.52\%$).\relax }}{7}{table.caption.25}}
+\newlabel{tab:summary}{{1}{7}{Summary of best results per method. $k^*$ = optimal dimension; ``Gain'' = test accuracy minus baseline ($92.52\%$).\relax }{table.caption.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}\hskip -1em.\nobreakspace  {}Full Accuracy Heatmap}{7}{subsection.4.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Accuracy heatmap over all (method, dimension) combinations. Green cells exceed the baseline; red cells fall below. The black-bordered cell marks the global optimum.\relax }}{7}{figure.caption.26}}
+\newlabel{fig:heatmap}{{8}{7}{Accuracy heatmap over all (method, dimension) combinations. Green cells exceed the baseline; red cells fall below. The black-bordered cell marks the global optimum.\relax }{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Optimal Method and Dimensionality}{7}{section.5}}
+\newlabel{sec:optimal}{{5}{7}{\texorpdfstring {\hskip -1em.~}{}Optimal Method and Dimensionality}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}\hskip -1em.\nobreakspace  {}Finding the Global Optimum}{7}{subsection.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\hskip -1em.\nobreakspace  {}Why This Configuration Works}{7}{subsection.5.2}}
+\@writefile{toc}{\contentsline {paragraph}{PCA as a strong projection baseline.}{7}{section*.28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \emph  {Left}: test-accuracy change (in percentage points, pp) relative to the 2048-d baseline for each method at its best dimensionality. \emph  {Right}: per-class baseline accuracy distribution ranked from hardest (red) to easiest (green), showing which categories are most susceptible to improvement by dimensionality reduction.\relax }}{8}{figure.caption.27}}
+\newlabel{fig:optimal}{{9}{8}{\emph {Left}: test-accuracy change (in percentage points, pp) relative to the 2048-d baseline for each method at its best dimensionality. \emph {Right}: per-class baseline accuracy distribution ranked from hardest (red) to easiest (green), showing which categories are most susceptible to improvement by dimensionality reduction.\relax }{figure.caption.27}{}}
+\@writefile{toc}{\contentsline {paragraph}{Feature selection is competitive and interpretable.}{8}{section*.29}}
+\@writefile{toc}{\contentsline {paragraph}{Sparse coding is the weakest method in this experiment.}{8}{section*.30}}
+\@writefile{toc}{\contentsline {paragraph}{Optimal dimensionality regime.}{8}{section*.31}}
+\@writefile{toc}{\contentsline {paragraph}{Compression ratio.}{8}{section*.32}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.\nobreakspace  {}Analysis and Observations}{8}{section.6}}
+\newlabel{sec:analysis}{{6}{8}{\texorpdfstring {\hskip -1em.~}{}Analysis and Observations}{section.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{Comparison of reduction paradigms.}{8}{section*.33}}
+\bibstyle{unsrt}
+\bibdata{main}
+\bibcite{xian2019zero}{{1}{}{{}}{{}}}
+\bibcite{lampert2009learning}{{2}{}{{}}{{}}}
+\bibcite{he2016deep}{{3}{}{{}}{{}}}
+\bibcite{fan2008liblinear}{{4}{}{{}}{{}}}
+\bibcite{cortes1995support}{{5}{}{{}}{{}}}
+\bibcite{scikit-learn}{{6}{}{{}}{{}}}
+\bibcite{fisher1992statistical}{{7}{}{{}}{{}}}
+\bibcite{guyon2003introduction}{{8}{}{{}}{{}}}
+\bibcite{pearson1901pca}{{9}{}{{}}{{}}}
+\bibcite{hotelling1933analysis}{{10}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@writefile{toc}{\contentsline {paragraph}{Effect of StandardScaler.}{9}{section*.34}}
+\@writefile{toc}{\contentsline {paragraph}{Hyperparameter sensitivity.}{9}{section*.35}}
+\@writefile{toc}{\contentsline {paragraph}{Class-level effects.}{9}{section*.36}}
+\@writefile{toc}{\contentsline {paragraph}{Practical recommendation.}{9}{section*.37}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}\hskip -1em.\nobreakspace  {}Conclusion}{9}{section.7}}
+\newlabel{sec:conclusion}{{7}{9}{\texorpdfstring {\hskip -1em.~}{}Conclusion}{section.7}{}}

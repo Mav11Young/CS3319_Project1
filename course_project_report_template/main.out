@@ -1,3 +1,19 @@
 \BOOKMARK [1][-]{section.1}{Experimental Setting}{}% 1
-\BOOKMARK [1][-]{section.2}{Experimental Results}{}% 2
-\BOOKMARK [1][-]{section.3}{Conclusion}{}% 3
+\BOOKMARK [1][-]{section.2}{Baseline: Linear SVM on Full Features}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Setup}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Results}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Dimensionality Reduction Methods}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Method 1: Feature Selection via SelectKBest}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Method 2: Feature Projection via PCA}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Method 3: Feature Learning via Sparse Coding \(OMP\)}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Experimental Results}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Accuracy vs. Dimensionality}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{PCA Variance Analysis}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Sparse Coding Diagnostics}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.4}{Accuracy Summary}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.5}{Full Accuracy Heatmap}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Optimal Method and Dimensionality}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Finding the Global Optimum}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Why This Configuration Works}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Analysis and Observations}{}% 18
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 19

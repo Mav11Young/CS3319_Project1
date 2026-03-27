@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+
+\bibitem{xian2019zero}
+Yongqin Xian, Christoph~H. Lampert, Bernt Schiele, and Zeynep Akata.
+\newblock Zero-shot learning—{A} comprehensive evaluation of the good, the
+  bad and the ugly.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell.}, 41(9):2251--2265,
+  2019.
+
+\bibitem{lampert2009learning}
+Christoph~H. Lampert, Hannes Nickisch, and Stefan Harmeling.
+\newblock Learning to detect unseen object classes by between-class attribute
+  transfer.
+\newblock In {\em IEEE Conf. Comput. Vis. Pattern Recog.}, pages 951--958,
+  2009.
+
+\bibitem{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em IEEE Conf. Comput. Vis. Pattern Recog.}, pages 770--778,
+  2016.
+
+\bibitem{fan2008liblinear}
+Rong-En Fan, Kai-Wei Chang, Cho-Jui Hsieh, Xiang-Rui Wang, and Chih-Jen Lin.
+\newblock {LIBLINEAR}: {A} library for large linear classification.
+\newblock {\em J. Mach. Learn. Res.}, 9:1871--1874, 2008.
+
+\bibitem{cortes1995support}
+Corinna Cortes and Vladimir Vapnik.
+\newblock Support-vector networks.
+\newblock {\em Mach. Learn.}, 20(3):273--297, 1995.
+
+\bibitem{scikit-learn}
+Fabian Pedregosa, Ga{\"e}l Varoquaux, Alexandre Gramfort, Vincent Michel,
+  Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron
+  Weiss, Vincent Dubourg, Jake Vanderplas, Alexandre Passos, David Cournapeau,
+  Matthieu Brucher, Matthieu Perrot, and {\'E}douard Duchesnay.
+\newblock Scikit-learn: Machine learning in {Python}.
+\newblock {\em J. Mach. Learn. Res.}, 12:2825--2830, 2011.
+
+\bibitem{fisher1992statistical}
+Ronald~A. Fisher.
+\newblock {\em Statistical Methods for Research Workers}.
+\newblock Oliver \& Boyd, Edinburgh, 1925.
+
+\bibitem{guyon2003introduction}
+Isabelle Guyon and Andr{\'e} Elisseeff.
+\newblock An introduction to variable and feature selection.
+\newblock {\em J. Mach. Learn. Res.}, 3:1157--1182, 2003.
+
+\bibitem{pearson1901pca}
+Karl Pearson.
+\newblock On lines and planes of closest fit to systems of points in space.
+\newblock {\em Philos. Mag.}, 2(11):559--572, 1901.
+
+\bibitem{hotelling1933analysis}
+Harold Hotelling.
+\newblock Analysis of a complex of statistical variables into principal
+  components.
+\newblock {\em J. Educ. Psychol.}, 24(6):417--441, 1933.
+
+\end{thebibliography}

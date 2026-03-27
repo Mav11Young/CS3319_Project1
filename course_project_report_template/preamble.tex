@@ -1,5 +1,10 @@
 %% This file contains a number of tweaks that are typically applied to the main document.
 %% They are not enabled by default, but can be enabled by uncommenting the relevant lines.
+%%
+%% Activated for CS3319 Project 1
+%%
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
 
 %%
 %% Inline annotations; for predefined colors, refer to "dvipsnames" in the xcolor package:
@@ -9,7 +14,7 @@
 \newcommand{\todo}[1]{{\color{red}#1}}
 \newcommand{\TODO}[1]{\textbf{\color{red}[TODO: #1]}}
 %%
-%% disable for camera ready / submission by uncommenting these lines  
+%% disable for camera ready / submission by uncommenting these lines
 %%
 % \renewcommand{\TODO}[1]{}
 % \renewcommand{\todo}[1]{#1}
@@ -23,7 +28,7 @@
 %%
 %% fine-tune paragraph spacing
 %%
-% \renewcommand{\paragraph}[1]{\vspace{.5em}\noindent\textbf{#1.}}
+% \renewcommand{\paragraph}[1]{\vspace{.4em}\noindent\textbf{#1.}\enskip}
 
 %%
 %% globally adjusts space between figure and caption

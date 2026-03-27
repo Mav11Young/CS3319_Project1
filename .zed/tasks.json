@@ -1,0 +1,44 @@
+[
+  {
+    "label": "LaTeX: Full Build (pdflatex + bibtex)",
+    "command": "cd /public/home/sjtu_yangzixu/tzy_workspace/Other/CS3319_Project1/course_project_report_template && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex && echo '✅ Build complete: main.pdf'",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "LaTeX: Quick Build (pdflatex only)",
+    "command": "cd /public/home/sjtu_yangzixu/tzy_workspace/Other/CS3319_Project1/course_project_report_template && pdflatex -interaction=nonstopmode main.tex && echo '✅ Quick build done: main.pdf'",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "LaTeX: Open PDF",
+    "command": "xdg-open /public/home/sjtu_yangzixu/tzy_workspace/Other/CS3319_Project1/course_project_report_template/main.pdf",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "never"
+  },
+  {
+    "label": "LaTeX: Build & Open PDF",
+    "command": "cd /public/home/sjtu_yangzixu/tzy_workspace/Other/CS3319_Project1/course_project_report_template && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex && echo '✅ Build complete' && xdg-open main.pdf",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "LaTeX: Clean Auxiliary Files",
+    "command": "cd /public/home/sjtu_yangzixu/tzy_workspace/Other/CS3319_Project1/course_project_report_template && rm -f main.aux main.bbl main.blg main.log main.out main.toc main.lof main.lot && echo '🧹 Auxiliary files cleaned'",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "LaTeX: Clean & Rebuild",
+    "command": "cd /public/home/sjtu_yangzixu/tzy_workspace/Other/CS3319_Project1/course_project_report_template && rm -f main.aux main.bbl main.blg main.log main.out main.toc && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex && echo '✅ Clean rebuild complete: main.pdf'",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  }
+]
