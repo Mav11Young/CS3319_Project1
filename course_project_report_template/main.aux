@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -13,7 +16,11 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\@writefile{toc}{\contentsline {section}{\numberline {1}\hskip -1em.\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces Experimental Setting}{1}{section.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2}\hskip -1em.\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces Experimental Results}{1}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.\hspace  {0.25em plus 0.125em minus 0.08em}\ignorespaces Conclusion}{1}{section.3}\protected@file@percent }
-\gdef \@abspage@last{1}
+\@writefile{toc}{\contentsline {section}{\numberline {1}\hskip -1em.\nobreakspace  {}Experimental Setting}{1}{section.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Overall experimental summary. Left: class-wise 60/40 train-test split. Middle: cross-validation accuracy, final test accuracy, macro F1 and weighted F1. Right: distribution of per-class test accuracy.\relax }}{1}{figure.caption.1}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:overview}{{1}{1}{Overall experimental summary. Left: class-wise 60/40 train-test split. Middle: cross-validation accuracy, final test accuracy, macro F1 and weighted F1. Right: distribution of per-class test accuracy.\relax }{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}\hskip -1em.\nobreakspace  {}Experimental Results}{1}{section.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Detailed class-wise analysis. Left: per-class test accuracy ranked from the most difficult class to the easiest class. Right: relationship between test-set support and class accuracy, where color encodes per-class F1 score.\relax }}{2}{figure.caption.2}}
+\newlabel{fig:class_analysis}{{2}{2}{Detailed class-wise analysis. Left: per-class test accuracy ranked from the most difficult class to the easiest class. Right: relationship between test-set support and class accuracy, where color encodes per-class F1 score.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.\nobreakspace  {}Conclusion}{2}{section.3}}

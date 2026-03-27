@@ -78,7 +78,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--max-iter",
         type=int,
-        default=10000,
+        default=5000,
         help="Max iterations for LinearSVC.",
     )
     parser.add_argument(
@@ -103,7 +103,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--n-jobs",
         type=int,
-        default=2,
+        default=-1,
         help="Parallel jobs for GridSearchCV.",
     )
     parser.add_argument(
