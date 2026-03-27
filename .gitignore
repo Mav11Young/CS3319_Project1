@@ -8,7 +8,6 @@ env/
 .ipynb_checkpoints/
 
 # outputs/cache
-outputs_q1_q2/
 *.joblib
 *.npy
 *.npz
